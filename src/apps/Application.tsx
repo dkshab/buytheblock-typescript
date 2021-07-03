@@ -2,7 +2,7 @@ import React from 'react';
 
 import NonAuthApp from './NonAuthApp/NonAuthApp';
 
-//import './App.css';
+import "../sass/styles.scss";
 
 function Application() {
   return (
