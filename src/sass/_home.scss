@@ -1,0 +1,17 @@
+.Home {
+  &__hero {
+    background: url("../images/serhat1.jpg");
+  }
+  &__section1 {
+  }
+  &__section2 {
+    &__signup {
+      background: url("../images/kara1.jpg");
+    }
+    &__started {
+      background: url("../images/sidekix1.jpg");
+    }
+  }
+  &__section3 {
+  }
+}
