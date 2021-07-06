@@ -1,17 +1,74 @@
 .Home {
+  width: $default-width;
+  margin: 0 auto;
   &__hero {
-    background: url("../images/serhat1.jpg");
+    height: 40vh;
+
+    background: url("../images/serhat2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
-  &__section1 {
-  }
-  &__section2 {
-    &__signup {
-      background: url("../images/kara1.jpg");
+  &__container {
+    width: 80%;
+    margin: 0 auto;
+    &__section1 {
+      h2 {
+        text-align: center;
+      }
+      &__box {
+        background-color: magenta;
+        display: flex;
+      }
     }
-    &__started {
-      background: url("../images/sidekix1.jpg");
+    &__section2 {
+      h2,
+      h4,
+      a {
+        color: $white;
+      }
+
+      &__signup {
+        height: 20vh;
+
+        border-radius: 1rem;
+        text-align: center;
+
+        background: linear-gradient(rgba($black, 0.75), rgba($black, 0.85)),
+          url("../images/kara2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      &__started {
+        height: 20vh;
+
+        border-radius: 1rem;
+        text-align: center;
+
+        background: linear-gradient(rgba($black, 0.75), rgba($black, 0.85)),
+          url("../images/sidekix2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+      }
     }
-  }
-  &__section3 {
+    &__section3 {
+      width: 100%;
+      margin: 0 auto;
+
+      background: url("../images/serhat2.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      text-align: center;
+
+      div {
+        span {
+          margin: 0 0.5rem 0 0;
+        }
+      }
+    }
   }
 }
