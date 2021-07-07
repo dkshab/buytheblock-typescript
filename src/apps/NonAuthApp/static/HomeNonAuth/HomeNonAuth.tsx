@@ -78,13 +78,13 @@ const HomeNonAuth = () => {
             </Link>
           </div>
         </div>
-        <div className="Home__container__section3">
-          <h2>FOLLOW US ON SOCIAL MEDIA</h2>
-          <div>
-            <span className="fab fa-facebook-f"></span>
-            <span className="fab fa-twitter"></span>
-            <span className="fab fa-instagram"></span>
-          </div>
+      </div>
+      <div className="Home__socials">
+        <h2>FOLLOW US ON SOCIAL MEDIA</h2>
+        <div>
+          <span className="fab fa-facebook-f"></span>
+          <span className="fab fa-twitter"></span>
+          <span className="fab fa-instagram"></span>
         </div>
       </div>
     </div>

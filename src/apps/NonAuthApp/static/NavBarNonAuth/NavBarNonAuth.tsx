@@ -23,25 +23,25 @@ const NavBarNonAuth = () => {
         </a>
         <ul>
           <li>
-            <Link to={ROUTES.HOME}>home</Link>
+            <Link to={ROUTES.HOME}>Home</Link>
           </li>
           <li>
-            <Link to={ROUTES.HOME}>pre-qualifications</Link>
+            <Link to={ROUTES.HOME}>Pre-qualifications</Link>
           </li>
           <li>
-            <Link to={ROUTES.HOME}>property advisor</Link>
+            <Link to={ROUTES.HOME}>Property Advisor</Link>
           </li>
           <li>
-            <Link to={ROUTES.HOME}>transfer process guide</Link>
+            <Link to={ROUTES.HOME}>Transfer Process guide</Link>
           </li>
           <li>
-            <Link to={ROUTES.HOME}>about us</Link>
+            <Link to={ROUTES.HOME}>About Us</Link>
           </li>
           <li>
-            <Link to={ROUTES.HOME}>contact us</Link>
+            <Link to={ROUTES.HOME}>Contact Us</Link>
           </li>
           <li>
-            <Link to={ROUTES.HOME}>my account</Link>
+            <Link to={ROUTES.HOME}>My Account</Link>
           </li>
         </ul>
       </nav>

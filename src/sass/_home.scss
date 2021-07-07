@@ -1,5 +1,6 @@
 .Home {
   width: $default-width;
+  color: $black2;
   margin: 0 auto;
   &__hero {
     height: 40vh;
@@ -8,6 +9,30 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    color: $white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1,
+    h3 {
+      color: $white;
+      margin: 0;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+    p {
+      a {
+        color: $yellow;
+        font-weight: bolder;
+        text-decoration: none;
+      }
+    }
   }
   &__container {
     width: 80%;
@@ -17,7 +42,6 @@
         text-align: center;
       }
       &__box {
-        background-color: magenta;
         display: flex;
       }
     }
@@ -33,6 +57,8 @@
 
         border-radius: 1rem;
         text-align: center;
+        margin: 0 0 7rem 0;
+        padding: 1rem;
 
         background: linear-gradient(rgba($black, 0.75), rgba($black, 0.85)),
           url("../images/kara2.jpg");
@@ -42,9 +68,10 @@
       }
       &__started {
         height: 20vh;
-
+        margin: 0 0 5rem 0;
         border-radius: 1rem;
         text-align: center;
+        padding: 1rem;
 
         background: linear-gradient(rgba($black, 0.75), rgba($black, 0.85)),
           url("../images/sidekix2.jpg");
@@ -53,21 +80,29 @@
         background-position: bottom;
       }
     }
-    &__section3 {
-      width: 100%;
-      margin: 0 auto;
+  }
+  &__socials {
+    width: 100%;
+    height: 25vh;
+    margin: 0 auto;
+    padding: 3rem;
+    color: $white;
 
-      background: url("../images/serhat2.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
+    background: url("../images/serhat2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
-      text-align: center;
+    text-align: center;
 
-      div {
-        span {
-          margin: 0 0.5rem 0 0;
-        }
+    h2 {
+      color: $white;
+    }
+
+    div {
+      span {
+        margin: 0 0.5rem 0 0;
+        font-size: 1.5rem;
       }
     }
   }

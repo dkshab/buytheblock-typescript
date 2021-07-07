@@ -1,17 +1,17 @@
 .NavBar {
-  background-color: lightcyan;
+  background-color: $black2;
 
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 
-  border: 1px solid magenta;
   margin: 0;
 }
 
 .logo {
   margin: 0;
   padding: 0;
+  color: $white;
 }
 
 /* Screen reader only */
@@ -31,7 +31,7 @@
   //  padding: 0.75em 15px;
   line-height: 1em;
   font-size: 1em;
-  color: #333;
+  color: $white;
 
   &:hover,
   &:focus {
@@ -159,7 +159,7 @@
           &:hover,
           &:focus {
             background: none; /* Remove background from off-canvas styling */
-            color: #c00;
+            color: $white;
           }
         }
         &:hover {

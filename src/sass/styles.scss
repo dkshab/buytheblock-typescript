@@ -6,6 +6,7 @@
 @import "mixins";
 @import "nav";
 @import "home";
+@import "footer";
 
 html {
   box-sizing: border-box;
@@ -37,7 +38,7 @@ h2,
 h3,
 h4,
 h5 {
-  color: #333;
+  color: $black2;
 }
 
 button,
