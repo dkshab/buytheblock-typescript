@@ -11,7 +11,12 @@ const NavBarNonAuth = () => {
         <span className="fa fa-bars" aria-hidden="true"></span>
       </a>
 
-      <h1 className="logo">Buy The Block</h1>
+      <div className="logo">
+        <Link to={ROUTES.HOME}>
+          <h1>Buy The Block</h1>
+        </Link>
+      </div>
+
       <nav id="main-menu" className="main-menu">
         <a
           href="#main-menu-toggle"

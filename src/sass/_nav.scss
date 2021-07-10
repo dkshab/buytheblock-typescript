@@ -9,9 +9,14 @@
 }
 
 .logo {
-  margin: 0;
-  padding: 0;
-  color: $white;
+  h1 {
+    margin: 0;
+    padding: 0;
+    color: $white;
+  }
+  a {
+    text-decoration: none;
+  }
 }
 
 /* Screen reader only */

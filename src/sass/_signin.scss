@@ -1,0 +1,97 @@
+.SignInAndSignUp {
+  width: 90vw;
+  max-width: 600px;
+  margin: 2rem auto 0 auto;
+
+  box-shadow: $generic-box-shadow;
+  border-radius: $generic-border-radius;
+}
+
+.SignIn,
+.SignUp {
+  padding: 2rem 1rem;
+  legend,
+  p {
+    text-align: center;
+  }
+
+  p {
+    a {
+      color: red;
+      text-decoration: none;
+    }
+  }
+  input:not([type="radio"]):not([type="checkbox"]) {
+    margin: 0 auto;
+  }
+
+  .field {
+    text-align: center;
+    margin: 0 0 0.5rem 0;
+    label {
+      font-weight: 600;
+      color: $black2;
+    }
+  }
+  .field + .field {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .pw-links {
+    border-top: 2px solid $light-gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .google-signin {
+    color: $mid-blue;
+    border: 1px solid $mid-blue;
+    padding: 0.5rem;
+    width: 12rem;
+    text-align: center;
+
+    margin: 0 0 0.5rem 0;
+    border-radius: $generic-border-radius;
+    span {
+      margin: 0 0.51rem 0 0;
+    }
+    &:hover {
+      cursor: pointer;
+      background-color: $mid-blue;
+      color: $white;
+    }
+  }
+
+  .buttons {
+    margin: 0.5rem 0 1rem 0;
+    text-align: center;
+
+    button + button {
+      margin-left: 0.25rem;
+    }
+    .signup {
+      // color: $white;
+      // background-color: $light-blue;
+      &:disabled {
+        color: #000;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .SignInAndSignUp {
+    width: 90vw;
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 768px) {
+  .SignInAndSignUp {
+    width: 40vw;
+    max-width: 500px;
+  }
+}
