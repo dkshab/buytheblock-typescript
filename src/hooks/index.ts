@@ -20,11 +20,12 @@ export const useCurrentUser = ()=>{
 
     React.useEffect(()=>{
         let unsubscribe = auth.onAuthStateChanged(async (userAuth) => {
-            console.log('userAuth', userAuth);
+           // console.log('userAuth', userAuth);
             
             if(userAuth) {
                 const userRef = await createUserProfileDocument(userAuth);
-                userRef?.onSnapshot((snapshot)=>{
+                userRef?.onSnapshot((snapshot)=> {
+                    
                     const currentUser = {uid: snapshot.id, ...snapshot.data()}
                     setCurrentUser(currentUser)
                 })

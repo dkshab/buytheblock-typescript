@@ -1,13 +1,11 @@
-import * as React from "react";
+import React, { createContext, useContext } from "react";
 import { useCurrentUser } from "../hooks";
 
 type CurrentUserType = {
   [key: string]: string;
 };
 
-export const CurrentUserContext = React.createContext<CurrentUserType | null>(
-  null
-);
+export const CurrentUserContext = createContext<CurrentUserType | null>(null);
 
 export const CurrentUserProvider = ({
   children,
@@ -22,3 +20,5 @@ export const CurrentUserProvider = ({
     </CurrentUserContext.Provider>
   );
 };
+
+export const useCurrentUserValue = () => useContext(CurrentUserContext);

@@ -10,17 +10,22 @@
 .SignIn,
 .SignUp {
   padding: 2rem 1rem;
+  width: 90vw;
+  max-width: 600px;
+  margin: 2rem auto 0 auto;
+  box-shadow: $generic-box-shadow;
+  border-radius: $generic-border-radius;
+
+  h3 {
+    text-align: center;
+    padding: 0;
+    margin: 0 0 2rem 0;
+  }
   legend,
   p {
     text-align: center;
   }
 
-  p {
-    a {
-      color: red;
-      text-decoration: none;
-    }
-  }
   input:not([type="radio"]):not([type="checkbox"]) {
     margin: 0 auto;
   }
@@ -44,6 +49,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    padding: 1rem 0 0 0;
+
+    p {
+      margin: 0.5rem 0;
+    }
+    .forgotPassword {
+      a {
+        color: red;
+        text-decoration: none;
+      }
+    }
+    .signup {
+      a {
+        color: blue;
+        text-decoration: none;
+        font-weight: bold;
+      }
+    }
   }
 
   .google-signin {

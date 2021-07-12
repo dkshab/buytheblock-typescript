@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import * as ROUTES from "../../../../constants/routes";
+import { signOut } from "../../../../utilities/firebase";
 
 const NavBarNonAuth = () => {
   return (
@@ -48,6 +49,7 @@ const NavBarNonAuth = () => {
           <li>
             <Link to={ROUTES.HOME}>My Account</Link>
           </li>
+          <li onClick={signOut}>Sign Out</li>
         </ul>
       </nav>
       {/* eslint-disable-next-line */}
