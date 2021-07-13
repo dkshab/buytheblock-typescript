@@ -1,33 +1,15 @@
 import * as React from "react";
-import { firestore } from "../../../../utilities/firebase";
 import { Link } from "react-router-dom";
 
-import * as ROUTES from "../../../../constants/routes";
+import * as ROUTES from "../../../constants/routes";
 
-import { collectIdsAndDocs } from "../../../../utilities/helper-functions";
-
-const HomeNonAuth = () => {
-  React.useEffect(() => {
-    const fetchPosts = async () => {
-      const snapshot = await firestore.collection("posts").get();
-
-      const allposts = snapshot.docs.map(collectIdsAndDocs);
-
-      console.log("Were are rusty!", allposts);
-    };
-
-    fetchPosts();
-  }, []);
-
+const HomeAuth = () => {
   return (
     <div className="Home">
       <div className="Home__hero">
         <h1>Buy The Block</h1>
         <h3>Home Buyer Concierge Services</h3>
-        <p>
-          Signed up? <Link to={ROUTES.SIGNIN}>Log in Here</Link>
-        </p>
-      </div>
+      </div>{" "}
       <div className="Home__container">
         <div className="Home__container__section1">
           <h2>BUY THE BLOCK IS A FIRST-TIME HOMEBUYER CONCIERGE SERVICE</h2>
@@ -64,13 +46,6 @@ const HomeNonAuth = () => {
           </div>
         </div>
         <div className="Home__container__section2">
-          <div className="Home__container__section2__signup">
-            <h2>SIGN UP TO GAIN ACCESS TO OUR SERVICES</h2>
-            <h4>easy, quick, convinient</h4>
-            <Link className="button" to={ROUTES.SIGNIN}>
-              Sign Up Here
-            </Link>
-          </div>
           <div className="Home__container__section2__started">
             <h2>LET’S GET STARTED</h2>
             <Link className="button" to={ROUTES.SIGNIN}>
@@ -78,36 +53,36 @@ const HomeNonAuth = () => {
             </Link>
           </div>
         </div>
-      </div>
-      <div className="Home__socials">
-        <h2>FOLLOW US ON SOCIAL MEDIA</h2>
-        <div>
-          <a
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span className="fab fa-twitter"></span>
-          </a>
-          <a
-            href="https://www.instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span className="fab fa-instagram"></span>
-          </a>
+        <div className="Home__socials">
+          <h2>FOLLOW US ON SOCIAL MEDIA</h2>
+          <div>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="fab fa-twitter"></span>
+            </a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="fab fa-instagram"></span>
+            </a>
 
-          <a
-            href="https://www.facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span className="fab fa-facebook-f"></span>
-          </a>
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="fab fa-facebook-f"></span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default HomeNonAuth;
+export default HomeAuth;

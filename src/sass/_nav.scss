@@ -87,6 +87,12 @@
         }
       }
     }
+    .navSignOut {
+      padding: 1rem 0.75rem;
+      line-height: 1rem;
+      font-size: 1rem;
+      color: blue;
+    }
   }
 
   .menu-close {
@@ -169,6 +175,16 @@
         }
         &:hover {
           border-bottom: 3px solid orange;
+        }
+      }
+      .navSignOut {
+        color: #06c;
+        &:hover,
+        &:focus {
+          background: none;
+          color: red;
+          border-bottom: 3px solid orange;
+          cursor: pointer;
         }
       }
     }

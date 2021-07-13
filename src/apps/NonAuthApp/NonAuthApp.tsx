@@ -5,7 +5,7 @@ import NotFound from "../sharedComponents/NotFound/NotFound";
 import SignIn from "./interaction/SignIn/SignIn";
 import SignUp from "./interaction/SignUp/SignUp";
 
-import FooterNonAuth from "./static/FooterNonAuth/FooterNonAuth";
+import FooterNonAuth from "../sharedComponents/FooterNonAuth/FooterNonAuth";
 import HomeNonAuth from "./static/HomeNonAuth/HomeNonAuth";
 import NavBarNonAuth from "./static/NavBarNonAuth/NavBarNonAuth";
 

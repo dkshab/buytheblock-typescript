@@ -1,22 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import * as ROUTES from "../../../../constants/routes";
+import * as ROUTES from "../../../constants/routes";
+import { signOut } from "../../../utilities/firebase";
 
-const NavBarNonAuth = () => {
+const NavBarAuth = () => {
   return (
     <div className="NavBar">
       <a href="#main-menu" className="menu-toggle" aria-label="Open main menu">
         <span className="sr-only">Open main menu</span>
         <span className="fa fa-bars" aria-hidden="true"></span>
       </a>
-
       <div className="logo">
         <Link to={ROUTES.HOME}>
           <h1>Buy The Block</h1>
         </Link>
       </div>
-
       <nav id="main-menu" className="main-menu">
         <a
           href="#main-menu-toggle"
@@ -45,8 +44,14 @@ const NavBarNonAuth = () => {
           <li>
             <Link to={ROUTES.HOME}>Contact Us</Link>
           </li>
+          <li>
+            <Link to={ROUTES.HOME}>My Account</Link>
+          </li>
+          <li className="navSignOut" onClick={signOut}>
+            Sign Out
+          </li>
         </ul>
-      </nav>
+      </nav>{" "}
       {/* eslint-disable-next-line */}
       <a
         href="#main-menu-toggle"
@@ -59,4 +64,4 @@ const NavBarNonAuth = () => {
   );
 };
 
-export default NavBarNonAuth;
+export default NavBarAuth;
