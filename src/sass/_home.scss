@@ -43,9 +43,11 @@
       }
       &__box {
         display: flex;
+        flex-flow: row wrap;
       }
     }
     &__section2 {
+      margin: 1rem 0 0 0;
       h2,
       h4,
       a {
@@ -53,31 +55,41 @@
       }
 
       &__signup {
-        height: 20vh;
-
+        height: 45vh;
         border-radius: 1rem;
-        text-align: center;
-        margin: 0 0 7rem 0;
-        padding: 1rem;
+        margin: 0 0 2rem 0;
 
         background: linear-gradient(rgba($black, 0.75), rgba($black, 0.85)),
           url("../images/kara2.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+          text-align: center;
+        }
       }
       &__started {
-        height: 20vh;
+        height: 30vh;
         margin: 0 0 5rem 0;
         border-radius: 1rem;
         text-align: center;
-        padding: 1rem;
 
         background: linear-gradient(rgba($black, 0.75), rgba($black, 0.85)),
           url("../images/sidekix2.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
     }
   }
@@ -105,6 +117,26 @@
         span {
           margin: 0 0.5rem 0 0;
           font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 767px) {
+  .Home {
+    &__container {
+      &__section1 {
+        &__box {
+          flex-flow: row nowrap;
+        }
+      }
+      &__section2 {
+        &__signup {
+          height: 30vh;
+        }
+        &__started {
+          height: 25vh;
         }
       }
     }

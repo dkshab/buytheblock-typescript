@@ -66,7 +66,7 @@ const HomeNonAuth = () => {
         <div className="Home__container__section2">
           <div className="Home__container__section2__signup">
             <h2>SIGN UP TO GAIN ACCESS TO OUR SERVICES</h2>
-            <h4>easy, quick, convinient</h4>
+            <h4>easy, quick, convenient</h4>
             <Link className="button" to={ROUTES.SIGNIN}>
               Sign Up Here
             </Link>

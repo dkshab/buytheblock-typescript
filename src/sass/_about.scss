@@ -1,0 +1,54 @@
+.About {
+  width: 90vw;
+  margin: 0 auto;
+
+  h2 {
+    text-align: center;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .fas,
+    .far {
+      font-size: 7rem;
+      color: $yellow;
+    }
+  }
+
+  &__signup {
+    height: 45vh;
+    border-radius: 1rem;
+    margin: 0 0 2rem 0;
+    background: linear-gradient(rgba($black, 0.75), rgba($black, 0.85)),
+      url("../images/kara2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2,
+    h4,
+    a {
+      color: $white;
+    }
+
+    h2 {
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 767px) {
+  .About {
+    &__signup {
+      height: 30vh;
+    }
+  }
+}

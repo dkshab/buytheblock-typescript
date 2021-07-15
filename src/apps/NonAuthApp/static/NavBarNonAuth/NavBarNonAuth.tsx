@@ -31,19 +31,22 @@ const NavBarNonAuth = () => {
             <Link to={ROUTES.HOME}>Home</Link>
           </li>
           <li>
-            <Link to={ROUTES.HOME}>Pre-qualifications</Link>
+            <Link to={ROUTES.SIGNIN}>Pre-qualifications</Link>
           </li>
           <li>
-            <Link to={ROUTES.HOME}>Property Advisor</Link>
+            <Link to={ROUTES.SIGNIN}>Property Advisor</Link>
           </li>
           <li>
-            <Link to={ROUTES.HOME}>Transfer Process guide</Link>
+            <Link to={ROUTES.SIGNIN}>Transfer Process guide</Link>
           </li>
           <li>
-            <Link to={ROUTES.HOME}>About Us</Link>
+            <Link to={ROUTES.FAQ}>FAQ</Link>
           </li>
           <li>
-            <Link to={ROUTES.HOME}>Contact Us</Link>
+            <Link to={ROUTES.ABOUT}>About Us</Link>
+          </li>
+          <li>
+            <Link to={ROUTES.CONTACT}>Contact Us</Link>
           </li>
         </ul>
       </nav>

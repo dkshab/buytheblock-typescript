@@ -6,6 +6,7 @@
 @import "mixins";
 @import "nav";
 @import "home";
+@import "about";
 @import "signin";
 @import "footer";
 
@@ -123,5 +124,26 @@ button,
 
   .fas {
     margin-right: 0.25rem;
+  }
+}
+
+.FAQ {
+  width: 90vw;
+  margin: 0 auto;
+  div {
+    ul {
+      li {
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  &__source {
+    font-style: italic;
+
+    span {
+      font-weight: bold;
+    }
   }
 }
