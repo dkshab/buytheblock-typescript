@@ -17,41 +17,43 @@ const About = () => {
         the correct information needed to make sound property investments.
       </p>
       <h2>OUR SERVICES INCLUDE</h2>
-      <div>
-        <p>
-          <span className="fas fa-paste"></span>
-        </p>
-        <h4>Pre-approvals</h4>
-      </div>
-      <div>
-        <p>
-          <span className="fas fa-home"></span>
-        </p>
-        <h4>Property Advice</h4>
-      </div>
-      <div>
-        <p>
-          <span className="fas fa-tags"></span>
-        </p>
-        <h4>Property Shopping</h4>
-      </div>
-      <div>
-        <p>
-          <span className="fas fa-home"></span>
-        </p>
-        <h4>Offer to purchase (OTP) Advice</h4>
-      </div>
-      <div>
-        <p>
-          <span className="far fa-credit-card"></span>
-        </p>
-        <h4>Credit Score Structuring</h4>
-      </div>
-      <div>
-        <p>
-          <span className="fas fa-cogs"></span>
-        </p>
-        <h4>Transfer Process Guide</h4>
+      <div className="About__services">
+        <div className="About__services__tile">
+          <p>
+            <span className="fas fa-paste"></span>
+          </p>
+          <h4>Pre-approvals</h4>
+        </div>
+        <div className="About__services__tile">
+          <p>
+            <span className="fas fa-home"></span>
+          </p>
+          <h4>Property Advice</h4>
+        </div>
+        <div className="About__services__tile">
+          <p>
+            <span className="fas fa-tags"></span>
+          </p>
+          <h4>Property Shopping</h4>
+        </div>
+        <div className="About__services__tile">
+          <p>
+            <span className="fas fa-home"></span>
+          </p>
+          <h4>Offer to purchase (OTP) Advice</h4>
+        </div>
+        <div className="About__services__tile">
+          <p>
+            <span className="far fa-credit-card"></span>
+          </p>
+          <h4>Credit Score Structuring</h4>
+        </div>
+        <div className="About__services__tile">
+          <p>
+            <span className="fas fa-cogs"></span>
+          </p>
+          <h4>Transfer Process Guide</h4>
+        </div>
       </div>
 
       <div className="About__signup">

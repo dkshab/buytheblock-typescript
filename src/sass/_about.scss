@@ -1,20 +1,35 @@
 .About {
-  width: 90vw;
+  width: $mobile-width;
   margin: 0 auto;
 
   h2 {
     text-align: center;
+    color: black;
+  }
+  p {
+    color: black;
   }
 
-  div {
+  &__services {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .fas,
-    .far {
-      font-size: 7rem;
-      color: $yellow;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+    &__tile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      padding: 1rem;
+      h4 {
+        font-size: 1.2rem;
+      }
+      .fas,
+      .far {
+        font-size: 7rem;
+        color: $yellow;
+      }
     }
   }
 
@@ -47,8 +62,9 @@
 
 @media (min-width: 767px) {
   .About {
+    width: 50vw;
     &__signup {
-      height: 30vh;
+      height: 20vh;
     }
   }
 }

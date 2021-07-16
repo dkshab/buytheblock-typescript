@@ -1,0 +1,38 @@
+.Contact {
+  width: $default-width;
+  margin: 0 auto;
+
+  &__hero {
+    height: 20vh;
+    background: url("../images/serhat2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    h2 {
+      margin: 0 0 0 0;
+      color: $white;
+      text-align: center;
+    }
+  }
+
+  &__content {
+    width: 50vw;
+    margin: 0 auto;
+    form {
+      display: flex;
+      justify-content: space-between;
+      input:not([type="radio"]):not([type="checkbox"]),
+      textarea {
+        width: 21rem;
+      }
+      .left {
+      }
+      .right {
+        .buttons {
+          text-align: right;
+        }
+      }
+    }
+  }
+}
