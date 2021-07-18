@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import * as ROUTES from "../../../constants/routes";
-import { signOut } from "../../../utilities/firebase";
+import * as ROUTES from "../../../../constants/routes";
+import { signOut } from "../../../../utilities/firebase";
 
 const NavBarAuth = () => {
   return (
@@ -36,7 +36,9 @@ const NavBarAuth = () => {
             <Link to={ROUTES.HOME}>Property Advisor</Link>
           </li>
           <li>
-            <Link to={ROUTES.HOME}>Transfer Process guide</Link>
+            <Link to={ROUTES.TRASNFER_PROCESS_GUIDE}>
+              Transfer Process guide
+            </Link>
           </li>
           <li>
             <Link to={ROUTES.FAQ}>FAQ</Link>

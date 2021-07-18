@@ -1,27 +1,35 @@
 .Contact {
-  width: $default-width;
-  margin: 0 auto;
-
   &__hero {
     height: 20vh;
+    width: 100%;
     background: url("../images/serhat2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
     h2 {
-      margin: 0 0 0 0;
+      margin: 0;
       color: $white;
       text-align: center;
     }
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__content {
-    width: 50vw;
+    width: 65vw;
     margin: 0 auto;
+
+    h3 {
+      text-align: center;
+      margin: 2rem 0rem;
+    }
+
     form {
       display: flex;
-      justify-content: space-between;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
       input:not([type="radio"]):not([type="checkbox"]),
       textarea {
         width: 21rem;
@@ -34,6 +42,22 @@
       .right {
         .buttons {
           text-align: right;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 767px) {
+  .Contact {
+    &__content {
+      form {
+        input:not([type="radio"]):not([type="checkbox"]),
+        textarea {
+          width: 30rem;
+        }
+        select {
+          width: 30rem;
         }
       }
     }
