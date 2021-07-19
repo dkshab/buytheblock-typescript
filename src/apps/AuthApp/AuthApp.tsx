@@ -11,6 +11,7 @@ import Contact from "../sharedComponents/Contact/Contact";
 import NotFound from "../sharedComponents/NotFound/NotFound";
 import TransferGuide from "./static/TransferGuide/TranferGuide";
 import PreQualifications from "./static/PreQualifications/PreQualifications";
+import PropertyAdvisor from "./static/PropertyAdvisor/PropertyAdvisor";
 
 const AuthApp = () => {
   return (
@@ -22,6 +23,7 @@ const AuthApp = () => {
           <Route exact path={ROUTES.HOME} component={HomeAuth} />
           <Route path={ROUTES.FAQ} component={FAQ} />
           <Route path={ROUTES.ABOUT} component={About} />
+          <Route path={ROUTES.PROPERTY_ADVISOR} component={PropertyAdvisor} />
           <Route path={ROUTES.CONTACT} component={Contact} />
           <Route path={ROUTES.PRE_APPROVALS} component={PreQualifications} />
           <Route

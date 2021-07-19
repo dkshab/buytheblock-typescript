@@ -1,0 +1,108 @@
+.PropertyAdvisor {
+  &__hero {
+    height: 20vh;
+    width: 100%;
+    background: url("../images/serhat2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    h2 {
+      margin: 0;
+      color: $white;
+      text-align: center;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__content {
+    width: $mobile-width;
+    margin: 0 auto;
+
+    h2 {
+      text-align: center;
+    }
+
+    &__services {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+
+      width: 50%;
+      margin: 0 auto;
+
+      &__tile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding: 1rem;
+
+        h4 {
+          font-size: 1.2rem;
+          text-align: center;
+        }
+        .fas,
+        .far {
+          font-size: 7rem;
+          color: $yellow;
+        }
+      }
+    }
+    &__contact {
+      h4 {
+        text-align: center;
+      }
+      form {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+
+        padding: 1rem;
+
+        input:not([type="radio"]):not([type="checkbox"]),
+        textarea {
+          width: 21rem;
+        }
+        select {
+          width: 21rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 767px) {
+  .PropertyAdvisor {
+    &__content {
+      width: 65vw;
+      &__services {
+        width: 60%;
+        justify-content: space-between;
+
+        &__tile {
+          margin: 1rem;
+        }
+      }
+      &__contact {
+        form {
+          input:not([type="radio"]):not([type="checkbox"]),
+          textarea {
+            width: 25rem;
+          }
+          select {
+            width: 25rem;
+          }
+          .bottom {
+            //background-color: firebrick;
+            textarea {
+              width: 53.1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

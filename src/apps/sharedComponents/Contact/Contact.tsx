@@ -87,7 +87,7 @@ const Contact = () => {
               type="text"
               name="email"
               className=""
-              aria-label="firstName"
+              aria-label="email"
               placeholder="Email Address"
               value={state.email}
               onChange={handleChange}

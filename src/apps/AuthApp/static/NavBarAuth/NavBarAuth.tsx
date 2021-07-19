@@ -33,7 +33,7 @@ const NavBarAuth = () => {
             <Link to={ROUTES.PRE_APPROVALS}>Pre-qualifications</Link>
           </li>
           <li>
-            <Link to={ROUTES.HOME}>Property Advisor</Link>
+            <Link to={ROUTES.PROPERTY_ADVISOR}>Property Advisor</Link>
           </li>
           <li>
             <Link to={ROUTES.TRASNFER_PROCESS_GUIDE}>
