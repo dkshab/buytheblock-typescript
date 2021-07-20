@@ -13,7 +13,7 @@ const NavBarNonAuth = () => {
 
       <div className="logo">
         <Link to={ROUTES.HOME}>
-          <h1>Buy The Block</h1>
+          <img src="/Logo.png" alt="" width="70px" height="auto" />
         </Link>
       </div>
 

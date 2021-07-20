@@ -12,7 +12,15 @@ const TransferGuide = () => {
           since the 1500s, when an unknown printer took a galley of type and
           scrambled it to make a type specimen book.
         </p>
-        <button>DOWNLOAD HERE</button>
+
+        <a
+          className="button"
+          href="https://firebasestorage.googleapis.com/v0/b/buytheblock-typescript.appspot.com/o/tranfer-guide%2FConveyancingProcessExample.pdf?alt=media&token=89405572-38d6-406f-a81c-f22d7308fa7c"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          DOWNLOAD HERE
+        </a>
       </div>
     </div>
   );

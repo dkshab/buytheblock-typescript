@@ -3,9 +3,11 @@
 
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 
   margin: 0;
+  padding: 0 1rem;
+  background-color: rgba($black, 0.75);
 }
 
 .logo {
@@ -91,7 +93,7 @@
       padding: 1rem 0.75rem;
       line-height: 1rem;
       font-size: 1rem;
-      color: blue;
+      color: #00bfff;
     }
   }
 
@@ -165,7 +167,7 @@
         padding: 0;
         margin: 0;
         a {
-          color: #06c;
+          color: $white;
           border: 0 !important;
           &:hover,
           &:focus {
@@ -178,7 +180,7 @@
         }
       }
       .navSignOut {
-        color: #06c;
+        //  color: #06c;
         &:hover,
         &:focus {
           background: none;

@@ -13,7 +13,7 @@ const NavBarAuth = () => {
       </a>
       <div className="logo">
         <Link to={ROUTES.HOME}>
-          <h1>Buy The Block</h1>
+          <img src="/Logo.png" alt="" width="70px" height="auto" />
         </Link>
       </div>
       <nav id="main-menu" className="main-menu">
