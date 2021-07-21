@@ -44,6 +44,7 @@
       &__box {
         display: flex;
         flex-flow: row wrap;
+        justify-content: space-between;
       }
     }
     &__section2 {
@@ -118,6 +119,10 @@
           margin: 0 0.5rem 0 0;
           font-size: 1.5rem;
         }
+
+        &:hover {
+          color: $yellow;
+        }
       }
     }
   }
@@ -129,6 +134,9 @@
       &__section1 {
         &__box {
           flex-flow: row nowrap;
+          div {
+            flex-basis: 48%;
+          }
         }
       }
       &__section2 {

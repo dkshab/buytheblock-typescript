@@ -1,0 +1,50 @@
+.NotFound {
+  margin: 0 auto;
+  width: 40vw;
+
+  h3 {
+    font-size: 2.5rem;
+  }
+  p,
+  a {
+    font-size: 1.1rem;
+  }
+
+  .back-link {
+    color: blue;
+    border: 1px solid lightblue;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    text-decoration: none;
+
+    &:hover {
+      background-color: cadetblue;
+      color: $white;
+    }
+  }
+
+  .fas {
+    margin-right: 0.25rem;
+  }
+}
+
+.FAQ {
+  width: 90vw;
+  margin: 0 auto;
+  div {
+    ul {
+      li {
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  &__source {
+    font-style: italic;
+
+    span {
+      font-weight: bold;
+    }
+  }
+}
