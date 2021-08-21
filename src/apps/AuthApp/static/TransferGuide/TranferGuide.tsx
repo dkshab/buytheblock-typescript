@@ -15,7 +15,7 @@ const TransferGuide = () => {
 
         <a
           className="button"
-          href="https://firebasestorage.googleapis.com/v0/b/buytheblock-typescript.appspot.com/o/tranfer-guide%2FConveyancingProcessExample.pdf?alt=media&token=89405572-38d6-406f-a81c-f22d7308fa7c"
+          href="https://firebasestorage.googleapis.com/v0/b/buytheblock-7066c.appspot.com/o/transfer-guide%2FBTB%20Conveyancing%20.pdf?alt=media&token=e9056d8c-1ffe-4feb-b3fb-729534585391"
           target="_blank"
           rel="noopener noreferrer"
         >
