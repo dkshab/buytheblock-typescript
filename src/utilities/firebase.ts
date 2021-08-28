@@ -24,7 +24,7 @@ export const storage = firebase.storage();
 export const provider = new firebase.auth.GoogleAuthProvider();
 export const signInWithGoogle = () =>
   auth.signInWithPopup(provider).then(() => {
-    window.location.replace("/home");
+    window.location.replace("/");
   });
 
 export const signOut = () => auth.signOut();
