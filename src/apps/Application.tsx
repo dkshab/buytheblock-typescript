@@ -10,7 +10,7 @@ import AuthApp from "./AuthApp/AuthApp";
 
 function Application() {
   const currentUser = useCurrentUserValue();
-  console.log(currentUser);
+  // console.log(currentUser);
 
   return (
     <div className="Application--Controller">

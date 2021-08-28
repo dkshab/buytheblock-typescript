@@ -17,29 +17,28 @@ const HomeAuth = () => {
             <div>
               <h4>The Challenge</h4>
               <p>
-                Many first time home buyers don’t know the first thing to do
-                when it comes to buying a property.
-              </p>
-              <p>
-                The few that have a basic understanding often make their
-                purchase in the wrong areas and more often than not end up
-                overpaying for a property because they don’t have the right
-                information to make an informed decision.
+                Buying a new home can be a daunting experience, especially when
+                you’re a first-time home buyer. Many first-time home buyers do
+                not have a basic understanding of the buying process, and often
+                make a purchase in an undesirable area or end up paying above
+                market value. This happens because many first-time home buyers,
+                do not have the right information to make informed property
+                decisions.
               </p>
             </div>
             <div>
               <h4>The Solution</h4>
               <p>
-                Buy The Block aims to provide first time home buyers with the
+                Buy The Block aims to provide first-time home buyers with the
                 appropriate information needed to guide buyers through the
-                process of becoming a homeowner. This is done by getting home
-                buyers pre-qualified, choosing the right areas to purchase in
-                and finally putting in offers that are market related.
+                process of becoming a homeowner. This is done through
+                pre-qualifying the buyers, choosing the right areas to purchase
+                in and finally putting in offers that are market related.
               </p>
               <p>
                 In addition to these services, we at Buy The Block aim to ensure
                 that our home buyers are protected throughout the process and
-                are provided with the correct information needed to make sound
+                are provided with adequate information needed to make sound
                 property investments.
               </p>
             </div>
