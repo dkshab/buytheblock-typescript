@@ -3,7 +3,7 @@ import { useHistory, Link } from "react-router-dom";
 import firebase from "firebase/app";
 
 import * as ROUTES from "../../../../constants/routes";
-import { auth } from "../../../../utilities/firebase";
+import { auth, signInWithGoogle } from "../../../../utilities/firebase";
 
 type SignUpType = {
   [key: string]: string;
@@ -86,7 +86,7 @@ const SignIn = () => {
 
         {error && <p className="help">{error.message}</p>}
         <div className="pw-links">
-          <p className="google-signin">
+          <p className="google-signin" onClick={signInWithGoogle}>
             <span className="fab fa-google"></span>
             Sign In With Google
           </p>
@@ -97,7 +97,7 @@ const SignIn = () => {
             New to Buy The Block? <Link to={ROUTES.SIGNUP}>Join now</Link>
           </p>
         </div>
-      </form>{" "}
+      </form>
       {/* <pre>{JSON.stringify(state, null, 2)}</pre> */}
     </div>
   );

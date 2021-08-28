@@ -82,25 +82,25 @@ const PropertyAdvisor = () => {
             <p>
               <span className="fas fa-home"></span>
             </p>
-            <h4>Pre-approvals</h4>
+            <h4>Property Advice</h4>
           </div>
           <div className="PropertyAdvisor__content__services__tile">
             <p>
               <span className="fas fa-tags"></span>
             </p>
-            <h4>Pre-approvals</h4>
+            <h4>Property Shopping</h4>
           </div>
           <div className="PropertyAdvisor__content__services__tile">
             <p>
               <span className="fas fa-file-alt"></span>
             </p>
-            <h4>Pre-approvals</h4>
+            <h4>Offer To Purchase (OTP) Advice</h4>
           </div>
           <div className="PropertyAdvisor__content__services__tile">
             <p>
               <span className="fas fa-credit-card"></span>
             </p>
-            <h4>Pre-approvals</h4>
+            <h4>Credit Score Structuring</h4>
           </div>
         </div>
 
