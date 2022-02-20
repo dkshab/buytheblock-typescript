@@ -11,6 +11,7 @@ import HomeNonAuth from "./static/HomeNonAuth/HomeNonAuth";
 import NavBarNonAuth from "./static/NavBarNonAuth/NavBarNonAuth";
 import About from "../sharedComponents/About/About";
 import Contact from "../sharedComponents/Contact/Contact";
+import ForgotPassword from "./interaction/ForgotPassword/ForgotPassword";
 
 const NonAuthApp = () => {
   return (
@@ -24,6 +25,7 @@ const NonAuthApp = () => {
           <Route path={ROUTES.FAQ} component={FAQ} />
           <Route path={ROUTES.ABOUT} component={About} />
           <Route path={ROUTES.CONTACT} component={Contact} />
+          <Route path={ROUTES.PASSWORD_FORGET} component={ForgotPassword} />
           <Route component={NotFound} />
         </Switch>
       </main>

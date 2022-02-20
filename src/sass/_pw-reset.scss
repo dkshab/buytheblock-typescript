@@ -1,0 +1,32 @@
+.ForgotPassword{
+    width: 90vw;
+    max-width: 600px;
+    margin: 0 auto;
+
+    &__content{
+        background-color: $white; 
+         box-shadow: $generic-box-shadow; 
+         border-radius: $generic-border-radius;
+         padding: 1rem;
+
+
+         &__form{
+             .field{
+                 display: flex;
+                 flex-direction: column; 
+                  input:not([type="radio"]):not([type="checkbox"]) {
+                    width: 15rem;
+                  }
+             }
+         }
+        
+            .support{
+                color: blue;
+
+                &:hover{
+                    color: magenta;
+                }
+            }
+    
+    }
+}
